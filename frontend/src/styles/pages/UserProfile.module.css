@@ -1,0 +1,64 @@
+.userProfile {
+    padding: 20px 100px;
+}
+
+.userDetails {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.userAvatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 3px solid black;
+    margin-right: 30px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.posts {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.editProfileBtn {
+    display: block;
+    text-decoration: none;
+}
+
+.nameAndScore {
+    display: flex;
+    align-items: center;
+}
+
+.score {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .userProfile {
+        padding: 10px;
+    }
+
+    .posts {
+        width: 100%;
+    }
+
+    .nameAndScore {
+        display: block;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .score {
+        font-size: 20px;
+    }
+}

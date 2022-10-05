@@ -1,0 +1,43 @@
+.leaderboard {
+    margin-left: 30px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+    border-radius: 7px;
+    position: sticky;
+    top: 95px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.616);
+    margin-bottom: 20px;
+}
+
+.users {
+    font-size: 17px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    color: #4385ff;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.button {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .leaderboard {
+        position: unset;
+        top: unset;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}

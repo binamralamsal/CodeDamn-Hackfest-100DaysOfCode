@@ -1,0 +1,98 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.createPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 600px;
+    width: 500px;
+}
+
+.title {
+    margin-bottom: 23px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.form input[type="text"],
+.form input[type="url"],
+.form textarea {
+    width: 100%;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form>div {
+    margin-bottom: 15px;
+}
+
+.fileUploadWrap {
+    display: flex;
+    justify-content: center;
+    border: 3px dashed #ddd;
+    background-color: rgb(248, 248, 248);
+    border-radius: 30px;
+}
+
+.fileUploadWrap.padding {
+    padding: 50px;
+}
+
+.form>button {
+    margin: 20px 0;
+}
+
+.form textarea {
+    resize: none;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+.previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 3px solid var(--primary-color);
+    padding: 5px;
+}
+
+.imageWrapper {
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+button.deleteBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: red;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    border: 3px solid rgb(180, 0, 0);
+}
+
+@media screen and (max-width:768px) {
+    .title {
+        text-align: center;
+    }
+}

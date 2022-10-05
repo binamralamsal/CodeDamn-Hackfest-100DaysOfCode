@@ -1,0 +1,4 @@
+tabs: ['README.md']
+terminal-one: cd backend && yarn && yarn dev
+terminal-two: cd frontend && yarn && yarn dev
+live-reload-browser: false

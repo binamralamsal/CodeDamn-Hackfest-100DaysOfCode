@@ -1,0 +1,36 @@
+.homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 0 100px;
+}
+
+.posts {
+  flex: 7;
+}
+
+.sidebar {
+  flex: 4;
+  position: sticky;
+  top: 95px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage {
+    padding: 0 10px;
+    flex-direction: column-reverse;
+    align-items: unset;
+  }
+
+  .leaderboard {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    position: unset;
+  }
+}

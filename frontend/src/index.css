@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(0, 132, 255);
+  --primary-color-hover: rgb(0, 102, 197);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* Button */
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  padding: 12px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: rgb(179, 0, 0);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.btn:disabled {
+  background-color: rgb(231, 231, 231);
+  color: #aaa;
+}
+
+/* Input */
+.form__input {
+  font-family: "Poppins", sans-serif;
+  padding: 13px 20px;
+  outline: none;
+  border: 3px solid #ddd;
+  border-radius: 30px;
+  box-shadow: rgba(243, 243, 243, 0.2) 0px 7px 29px 0px;
+}
+
+.form__input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Hyperlinks */
+a {
+  color: var(--primary-color);
+}
+
+input[type="file"] {
+  font-family: "Poppins", sans-serif;
+}
+
+.block {
+  display: block;
+}

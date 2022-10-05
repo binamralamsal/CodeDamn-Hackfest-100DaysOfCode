@@ -1,0 +1,155 @@
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.panel {
+  background-color: white;
+  z-index: 1001;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 30px;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.commentBoxUpper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentTitle {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.addCommentForm {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.addCommentAvatar {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.addCommentMain {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.addCommentInput {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+  resize: none;
+  width: 92%;
+}
+
+.addCommentBtn {
+  align-self: flex-end;
+  font-size: 14px !important;
+  padding: 4px 10px !important;
+  width: 90px !important;
+  margin-top: 10px !important;
+}
+
+.comments {
+  max-height: 300px;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(197, 197, 197);
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.commentAvatar {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.commentContent {
+  margin-left: 10px;
+}
+
+.commentUpper {
+  display: flex;
+  align-items: center;
+}
+
+.commentAuthor {
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.commentTime {
+  font-size: 12px;
+}
+
+.commentText {
+  font-size: 13px;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .panel {
+    left: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%)
+  }
+}
