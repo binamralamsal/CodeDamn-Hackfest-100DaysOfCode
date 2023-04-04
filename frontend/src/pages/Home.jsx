@@ -25,7 +25,7 @@ const Home = () => {
     getPosts();
   }, []);
 
-  return (
+    return (
     <div className={styles.homepage}>
       <div className={styles.posts}>
         {posts?.map((post) => (

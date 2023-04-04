@@ -1,5 +1,6 @@
 import { createContext, useState, useContext } from "react";
-import { axios } from "../lib/axios";
+// import { axios } from "../lib/axios";
+import axios from "axios"
 import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
 
@@ -11,8 +12,8 @@ const PostsProvider = ({ children }) => {
 
   const getPosts = async () => {
     try {
-      const { data } = await axios.get("/api/posts");
-      setPosts(data);
+      const response = await axios.get("/api/posts");
+      setPosts(response.data);
     } catch (error) {
       toast.error(error.response.data.message);
     }
