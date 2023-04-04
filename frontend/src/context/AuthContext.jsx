@@ -39,6 +39,7 @@ const AuthProvider = ({ children }) => {
       setUser(result.data);
       navigate("/");
     } catch (error) {
+      console.log(error)
       toast.error(error.response.data.message);
     }
   };
